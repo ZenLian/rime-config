@@ -1,0 +1,7 @@
+patch:
+  switches/+:
+    - name: single_char
+      states: [词组, 单字]
+      reset: 1
+  engine/filters/+:
+    - lua_filter@single_char_filter

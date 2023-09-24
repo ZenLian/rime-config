@@ -1,0 +1,7 @@
+patch:
+  punctuator:
+    import_preset: default
+    full_shape:
+      "/": "、"
+    half_shape:
+      "/": "、"

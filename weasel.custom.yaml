@@ -1,0 +1,9 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sun Sep 24 15:04:32 2023"
+  rime_version: 1.8.5
+patch:
+  "style/color_scheme": aqua
+  "style/horizontal": true
