@@ -9,6 +9,7 @@ patch:
     - schema: double_pinyin_flypy # 小鹤双拼
     - schema: wubi86              # 五笔
     - schema: pinyin_simp         # 拼音简体
+    - schema: easy_en
 
   "menu/page_size": 5  # 每页候选词数量
   switcher:
