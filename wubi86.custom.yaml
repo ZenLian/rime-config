@@ -2,6 +2,11 @@ patch:
   switches/+:
     - name: single_char
       states: [词组, 单字]
-      reset: 1
+      reset: 0
   engine/filters/+:
     - lua_filter@single_char_filter
+  translator/+:
+    dictionary: wubi86_jidian
+    enable_user_dict: false # 用户词频调整
+    comment_format: # 提示码自定义
+      - xform/.+//  # 关闭

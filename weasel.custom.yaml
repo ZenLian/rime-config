@@ -5,5 +5,50 @@ customization:
   modified_time: "Sun Sep 24 15:04:32 2023"
   rime_version: 1.8.5
 patch:
-  "style/color_scheme": aqua
-  "style/horizontal": true
+  style/+:
+    color_scheme: catppuccin_latte
+    color_scheme_dark: catppuccin_mocha
+    inline_preedit: true # 行内编辑
+    horizontal: true
+    font_point: 12
+    label_font_point: 12
+    comment_font_point: 12
+    layout/+:
+      border_width: 1
+      margin_x: 6
+      margin_y: 6
+      spacing: 6
+      candidate_spacing: 6
+      hilite_spacing: 6
+      round_corner: 4
+  preset_color_schemes/+:
+    catppuccin_mocha:
+      name: CatppuccinMocha
+      author: Zenlian
+      back_color: 0x2E1E1E    # 背景 base
+      border_color: 0x443231  # 边框 surface0
+      text_color: 0xF4D6CD    # 输入 text
+      label_color: 0xB29993   # 序号 overlay2
+      # hilited_text_color: 0xF4D6CD # 拼音框-文字 text
+      hilited_back_color: 0x1B1111 # 拼音框-背景 crust
+      # candidate_text_color: 0xF4D6CD # 候选词 text
+      comment_text_color: 0xB29993 # 候选词注释 overlay2
+      hilited_candidate_text_color: 0x2E1E1E # 当前候选-文字 base
+      hilited_comment_text_color: 0x705B58 # 当前候选-注释 surface2
+      hilited_candidate_back_color: 0xFEBEB4 # 当前候选-背景 lavender
+      hilited_candidate_label_color: 0x705B58 # 当前候选-序号 surface2
+    catppuccin_latte:
+      name: CatppuccinLatte
+      author: Zenlian
+      back_color: 0xF5F1EF    # 背景 base
+      border_color: 0xDAD0CC  # 边框 surface0
+      text_color: 0x694F4C    # 输入 text
+      label_color: 0x937F7C   # 序号 overlay2
+      # hilited_text_color: 0x694F4C # 拼音框-文字 text
+      hilited_back_color: 0xE8E0DC # 拼音框-背景 crust
+      # candidate_text_color: 0x694F4C # 候选词 text
+      comment_text_color: 0x937F7C # 候选词注释 overlay2
+      hilited_candidate_text_color: 0xF5F1EF # 当前候选-文字 base
+      hilited_comment_text_color: 0xBEB0AC # 当前候选-注释 surface2
+      hilited_candidate_back_color: 0xEF3988 # 当前候选-背景 mauve
+      hilited_candidate_label_color: 0xBEB0AC # 当前候选-序号 surface2

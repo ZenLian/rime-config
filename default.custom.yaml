@@ -2,26 +2,28 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.15.0.0
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sun Sep 24 23:48:42 2023"
+  modified_time: "Wed Oct 2 11:54:00 2024"
   rime_version: 1.8.5
 patch:
   schema_list:
-    - schema: wubi86              # 五笔
     - schema: double_pinyin_flypy # 小鹤双拼
-  
+    - schema: wubi86              # 五笔
+    - schema: pinyin_simp         # 拼音简体
+
   "menu/page_size": 5  # 每页候选词数量
   switcher:
     caption: "【输入法设置】"
     hotkeys:
-      - Control+grave 
+      - Control+grave
+      - F4
     abbreviate_options: true
     option_list_separator: "｜"
-  
+
   # 中英文切换
   # inline_ascii: 编码字符上屏，保持中文
   # commit_text:  候选文字上屏，切换到英文
   # commit_code:  编码字符上屏，切换到英文
-  ascii_composer: 
+  ascii_composer:
     good_old_caps_lock: true  # 保持 caps 键切换大小写的功能
     switch_key:
       Shift_L: commit_code
@@ -29,15 +31,15 @@ patch:
       Control_L: noop
       Control_R: noop
       Caps_Lock: noop
-  
+
   key_binder:
     bindings:
       # 候选2/3 分号/单引号
       - { when: has_menu, accept: semicolon, send: 2 }
-      - { when: has_menu, accept: apostrophe, send: 3 } 
+      - { when: has_menu, accept: apostrophe, send: 3 }
       # 翻页 逗号/句号
-      - { when: has_menu, accept: comma, send: Page_Up } 
-      - { when: has_menu, accept: period, send: Page_Down } 
+      - { when: has_menu, accept: comma, send: Page_Up }
+      - { when: has_menu, accept: period, send: Page_Down }
       # emacs_editing
       - { when: composing, accept: Control+p, send: Up }
       - { when: composing, accept: Control+n, send: Down }

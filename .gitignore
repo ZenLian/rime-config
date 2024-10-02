@@ -3,3 +3,4 @@ user.yaml
 build/
 *.userdb/
 sync/
+trash/
