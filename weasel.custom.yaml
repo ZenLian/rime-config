@@ -14,9 +14,10 @@ patch:
     label_font_point: 14
     comment_font_point: 14
     layout/+:
+      min_width: 0
       border_width: 1
-      margin_x: 10
-      margin_y: 10
+      margin_x: 8
+      margin_y: 6
       spacing: 10
       candidate_spacing: 10
       hilite_spacing: 10
