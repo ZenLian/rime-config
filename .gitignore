@@ -1,6 +1,7 @@
 installation.yaml
 user.yaml
-build/
+build/**
+!build/flypy*.bin
 *.userdb/
 sync/
 trash/

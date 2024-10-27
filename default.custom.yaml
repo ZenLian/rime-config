@@ -6,12 +6,13 @@ customization:
   rime_version: 1.8.5
 patch:
   schema_list:
+    - schema: flypy # 小鹤音形
     - schema: double_pinyin_flypy # 小鹤双拼
-    - schema: wubi86              # 五笔
-    - schema: pinyin_simp         # 拼音简体
+    - schema: wubi86 # 五笔
+    - schema: pinyin_simp # 拼音简体
     - schema: easy_en
 
-  "menu/page_size": 5  # 每页候选词数量
+  "menu/page_size": 5 # 每页候选词数量
   switcher:
     caption: "【输入法设置】"
     hotkeys:
@@ -25,7 +26,7 @@ patch:
   # commit_text:  候选文字上屏，切换到英文
   # commit_code:  编码字符上屏，切换到英文
   ascii_composer:
-    good_old_caps_lock: true  # 保持 caps 键切换大小写的功能
+    good_old_caps_lock: true # 保持 caps 键切换大小写的功能
     switch_key:
       Shift_L: commit_code
       Shift_R: commit_code
@@ -38,9 +39,13 @@ patch:
       # 候选2/3 分号/单引号
       - { when: has_menu, accept: semicolon, send: 2 }
       - { when: has_menu, accept: apostrophe, send: 3 }
-      # 翻页 逗号/句号
+      # 翻页 逗号/句号 [/]
       - { when: has_menu, accept: comma, send: Page_Up }
       - { when: has_menu, accept: period, send: Page_Down }
+      - { when: has_menu, accept: bracketleft, send: Page_Up }
+      - { when: has_menu, accept: bracketright, send: Page_Down }
+      # Tab 退出
+      - { when: composing, accept: "Tab", send: Escape }
       # emacs_editing
       - { when: composing, accept: Control+p, send: Up }
       - { when: composing, accept: Control+n, send: Down }
