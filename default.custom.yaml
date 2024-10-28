@@ -6,6 +6,7 @@ customization:
   rime_version: 1.8.5
 patch:
   schema_list:
+    - schema: openfly # 开源小鹤音形
     - schema: flypy # 小鹤音形
     - schema: double_pinyin_flypy # 小鹤双拼
     - schema: wubi86 # 五笔

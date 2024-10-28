@@ -1,0 +1,19 @@
+# encoding: utf-8
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+    - name: full_shape
+    - name: simplification
+      states: [简, 繁]
+      reset: 0
+    - name: ascii_punct
+      reset: 0
+  key_binder:
+    import_preset: default #方案切换相关
+    bindings:
+      - { accept: "Control+F2", toggle: ascii_mode, when: always }
+      # 切换简繁
+      - { accept: "Control+F3", toggle: simplification, when: always }
+  style/+:
+    horizontal: true

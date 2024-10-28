@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: openfly
+version: "v10.9z"
+
+import_tables:
+  - "openfly.user.top"
+  - "openfly.fast.symbols"
+  - "openfly.primary"
+  - "openfly.secondary.short.code
+  - "openfly.secondary"
+  - "openfly.secondary.single.word"
+  # - 'openfly.completion'
+  - "openfly.off-table"
+  - "openfly.whimsicality"
+  - "openfly.symbols"
+  - "openfly.web"
+  - "openfly.uncommon"
+  - "openfly.user"

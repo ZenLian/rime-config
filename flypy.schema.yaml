@@ -140,8 +140,6 @@ key_binder:
     - { accept: "Shift+space", toggle: full_shape, when: always }
     # 切换中英标点
     - { accept: "Control+period", toggle: ascii_punct, when: always }
-    # 切换简繁
-    - { accept: "Control+F3", toggle: tradition, when: always }
 
 recognizer:
   import_preset: default
